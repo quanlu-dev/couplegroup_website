@@ -90,95 +90,233 @@
 <script src="assets/js/site-header.js"></script>
 <main>
 <!-- Hero Section (Exactly as source) -->
-<section class="relative flex flex-col lg:flex-row items-center justify-start overflow-hidden bg-white pt-32 pb-16 lg:py-44 h-auto lg:h-[700px]">
+<section class="relative flex flex-col lg:flex-row items-center justify-start overflow-hidden bg-white pt-32 lg:py-44 h-auto lg:h-[700px]">
 <div class="relative lg:absolute lg:top-[110px] lg:-right-0 w-full lg:w-[65%] h-auto lg:h-[calc(100%-110px)] z-0 lg:rounded-[40px] overflow-hidden order-2 lg:order-none mt-12 lg:mt-0">
 <video autoplay="" class="w-full h-full object-cover" loop="" muted="" playsinline="">
 <source src="https://cdn.hstatic.net/files/1000341387/file/videofoundation.mp4" type="video/mp4"/>
 </video>
 </div>
 <div class="container mx-auto px-margin-desktop relative z-10 order-1 lg:order-none">
-<div class="max-w-2xl hero-title-entrance text-left ml-0">
-<span class="inline-block px-4 py-1 bg-dynamic-pink text-white rounded-full font-bold mb-4 tracking-[0.2em] uppercase text-[10px]">Couple Foundation</span>
-<h1 class="font-montserrat font-extrabold leading-[1.1] editorial-text uppercase text-[#243447]">
-    <span class="block text-[44px] lg:text-[50px]">
-        Couple <br> Foundation
-    </span>
-</h1>
-<div class="flex flex-wrap gap-5 justify-start mt-10">
-<a href="#activities"
-   class="bg-dynamic-pink text-soft-white px-8 py-4 rounded-lg
-          text-[17px] font-semibold
-          flex items-center gap-2
-          hover:bg-opacity-90 transition-all">
-    Hành trình thiện nguyện "Lan tỏa yêu thương"
-    <span class="material-symbols-outlined">favorite</span>
-</a>
-</div>
-</div>
+
+    <div class="max-w-2xl hero-title-entrance text-left ml-0">
+
+        <!-- Badge -->
+        <span
+            class="inline-block
+                   px-2 py-1 sm:px-4
+                   mb-4
+                   text-[9px] sm:text-[10px]
+                   tracking-[0.08em] sm:tracking-[0.2em]
+                   bg-dynamic-pink text-white
+                   rounded-full
+                   font-semibold
+                   whitespace-nowrap">
+            Couple Foundation
+        </span>
+
+        <!-- Title -->
+        <h1 class="font-montserrat font-extrabold leading-[1.1] editorial-text uppercase text-[#243447]">
+
+            <span class="block text-[32px] sm:text-[38px] lg:text-[50px]">
+                Couple <br class="sm:hidden">
+                <span class="sm:inline">Foundation</span>
+            </span>
+
+        </h1>
+
+        <!-- Button -->
+        <div class="flex flex-nowrap mt-8">
+
+            <a
+                href="#activities"
+                class="inline-flex items-center justify-center
+                       gap-1 sm:gap-2
+                       px-3 py-2
+                       sm:px-8 sm:py-4
+                       text-[11px] sm:text-[17px]
+                       leading-none
+                       rounded-md sm:rounded-lg
+                       font-semibold
+                       whitespace-nowrap
+                       bg-dynamic-pink
+                       text-white
+                       hover:bg-opacity-90
+                       transition-all">
+
+                <span>Hành trình thiện nguyện</span>
+
+                <span class="material-symbols-outlined text-[16px] sm:text-[22px]">
+                    favorite
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
 </div>
 <!-- Floating Decorative Images -->
 </section>
 <!-- Section 1: Introduction -->
 <section id="activities" class="pt-32 pb-8 bg-soft-white">
 <div class="max-w-4xl mx-auto px-margin-mobile text-center">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-8 uppercase tracking-wide">Couple Foundation</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed font-body-md">
-Được thành lập từ năm 2013, Couple Foundation là quỹ thiện nguyện của Couple Group<br> ra đời với mong muốn cùng chung tay lan tỏa yêu thương đến cộng đồng. </p>
+
+    <h2
+        class="font-headline-lg
+               text-[28px] sm:text-[34px] lg:text-headline-lg
+               font-bold
+               uppercase
+               tracking-wide
+               text-primary
+               mb-5 sm:mb-8">
+        Couple Foundation
+    </h2>
+
+    <p
+        class="text-[15px] sm:text-[17px] lg:text-body-lg
+               leading-7 sm:leading-8
+               text-on-surface-variant
+               max-w-3xl
+               mx-auto
+               px-2 sm:px-0">
+
+        Được thành lập từ năm 2013, Couple Foundation là quỹ thiện nguyện của Couple Group
+        <br class="hidden sm:block">
+        ra đời với mong muốn cùng chung tay lan tỏa yêu thương đến cộng đồng.
+
+    </p>
+
 </div>
 </section>
 <!-- Mission Section (Kept as Intro) -->
 <section class="py-24 bg-soft-white">
 <div class="max-w-container-max mx-auto px-margin-desktop">
 <div class="flex flex-col gap-16 max-w-container-max mx-auto">
-<div class="w-full">
-<div class="relative rounded-2xl overflow-hidden shadow-premium max-w-[1000px] mx-auto h-[250px] md:h-[500px]">
-<img alt="Sứ mệnh Couple Foundation" class="w-full object-cover rounded-3xl shadow-premium h-full" src="assets/heart.webp">
-<div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black/60 to-transparent">
-<p class="text-soft-white font-headline-md">Sứ mệnh "Kết nối trái tim"</p>
+<div class="w-full lg:px-margin-desktop">
+    <div
+        class="relative
+               w-full
+               lg:max-w-[1000px] lg:mx-auto
+               h-[180px] sm:h-[260px] md:h-[500px]
+               overflow-hidden
+               lg:rounded-3xl
+               rounded-none">
+
+        <img
+            src="assets/heart.webp"
+            alt="Sứ mệnh Couple Foundation"
+            class="w-full h-full object-cover">
+
+    </div>
 </div>
-</div>
-</div>
-<div class="w-full max-w-[1000px] mx-auto space-y-8">
-<div class="space-y-4">
-    <h2 class="font-headline-lg text-headline-lg text-primary md:text-display-lg">Hành trình lan tỏa yêu thương</h2>
-    <div class="w-20 h-1 bg-dynamic-pink rounded-full"></div>
-</div>
-<div class="space-y-6">
-    <p class="font-body-md text-body-md text-on-surface-variant opacity-80 leading-relaxed">
-        Lan tỏa yêu thương không bắt đầu từ những điều lớn lao. Đó là hành trình được vun đắp từ những hành động tử tế, khi nhiều người cùng chung một tấm lòng.
-    </p>
-    <p class="font-body-md text-body-md text-on-surface-variant opacity-80 leading-relaxed">
-        Trên mỗi hành trình, chúng tôi không chỉ mang theo những phần quà, mà còn mang theo sự hiện diện, sự lắng nghe và những sẻ chia chân thành đến với trẻ em, trường học vùng khó khăn, mái ấm, viện dưỡng lão và những gia đình cần được giúp đỡ. Có những món quà được trao đi, có những câu chuyện được kể, có những nụ cười được thắp sáng và cũng có những cảm xúc ở lại rất lâu trong lòng mỗi người đồng hành.
-    </p>
-    <p class="font-body-md text-body-md text-on-surface-variant opacity-80 leading-relaxed">
-        Suốt hơn một thập kỷ, Couple Foundation đã trở thành nơi kết nối những tấm lòng, để mỗi thành viên Couple Group đều có cơ hội góp một phần yêu thương theo cách của riêng mình. Bởi chúng tôi tin rằng, khi yêu thương được sẻ chia, những giá trị tốt đẹp sẽ tiếp tục được lan tỏa.
-    </p>
-</div>
-<div class="grid grid-cols-2 gap-8 pt-6">
-<div>
-    <h4 class="font-display-lg text-headline-lg text-dynamic-pink mb-1">2013</h4>
-    <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-tighter">Được thành lập</p>
-</div>
-<div>
-<h4 class="font-display-lg text-headline-lg text-dynamic-pink mb-1">10k+</h4>
-<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-tighter">Áo khoác trao đi mỗi năm</p>
-</div>
-</div>
+<div class="w-full lg:max-w-[1000px] lg:mx-auto space-y-6 sm:space-y-8">
+
+    <div class="space-y-3 sm:space-y-4">
+
+        <h2
+    class="font-headline-lg
+           text-[19px] sm:text-[30px] lg:text-headline-lg
+           leading-tight
+           text-primary">
+    Hành trình lan tỏa yêu thương
+</h2>
+
+        <div class="w-16 sm:w-20 h-1 bg-dynamic-pink rounded-full"></div>
+
+    </div>
+
+    <div
+        class="space-y-5
+               text-[15px] sm:text-body-md
+               leading-7 sm:leading-relaxed
+               text-on-surface-variant
+               text-justify">
+
+        <p class="opacity-80">
+            Lan tỏa yêu thương không bắt đầu từ những điều lớn lao. Đó là hành trình được vun đắp từ những hành động tử tế, khi nhiều người cùng chung một tấm lòng.
+        </p>
+
+        <p class="opacity-80">
+            Trên mỗi hành trình, chúng tôi không chỉ mang theo những phần quà, mà còn mang theo sự hiện diện, sự lắng nghe và những sẻ chia chân thành đến với trẻ em, trường học vùng khó khăn, mái ấm, viện dưỡng lão và những gia đình cần được giúp đỡ. Có những món quà được trao đi, có những câu chuyện được kể, có những nụ cười được thắp sáng và cũng có những cảm xúc ở lại rất lâu trong lòng mỗi người đồng hành.
+        </p>
+
+        <p class="opacity-80">
+            Suốt hơn một thập kỷ, Couple Foundation đã trở thành nơi kết nối những tấm lòng, để mỗi thành viên Couple Group đều có cơ hội góp một phần yêu thương theo cách của riêng mình. Bởi chúng tôi tin rằng, khi yêu thương được sẻ chia, những giá trị tốt đẹp sẽ tiếp tục được lan tỏa.
+        </p>
+
+    </div>
+
+    <div
+        class="grid
+               grid-cols-2
+               gap-4 sm:gap-8
+               pt-4 sm:pt-6">
+
+        <div>
+
+            <h4
+                class="font-display-lg
+                       text-[30px] sm:text-headline-lg
+                       text-dynamic-pink
+                       mb-1">
+                2013
+            </h4>
+
+            <p
+                class="text-[11px] sm:text-label-sm
+                       leading-snug
+                       uppercase
+                       tracking-tight
+                       text-on-surface-variant">
+                Được thành lập
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4
+                class="font-display-lg
+                       text-[30px] sm:text-headline-lg
+                       text-dynamic-pink
+                       mb-1">
+                10k+
+            </h4>
+
+            <p
+                class="text-[11px] sm:text-label-sm
+                       leading-snug
+                       uppercase
+                       tracking-tight
+                       text-on-surface-variant">
+                Áo khoác trao đi mỗi năm
+            </p>
+
+        </div>
+
+    </div>
+
 </div>
 </div>
 </section>
 <!-- Section 4: Activity Gallery -->
-<section class="py-24 bg-soft-white" id="gallery">
-    <div class="max-w-container-max mx-auto px-margin-desktop">
+<section class="py-12 md:py-20 lg:py-24 bg-soft-white" id="gallery">
+    <div class="max-w-container-max mx-auto px-5 md:px-8 lg:px-margin-desktop">
 
-        <div class="flex items-end justify-between mb-12">
+        <div class="mb-8 md:mb-12">
             <div>
-                <span class="text-dynamic-pink uppercase tracking-[0.3em] text-xs font-bold">
-                    Gallery
-                </span>
-                <h2 class="font-headline-md text-headline-md text-primary mt-2">
-                    Khoảnh khắc Couple Foundation
-                </h2>
+                <span class="text-dynamic-pink uppercase tracking-[0.25em] text-[10px] md:text-xs font-bold">
+    Gallery
+</span>
+
+<h2 class="font-headline-md
+           text-[28px] md:text-[36px] lg:text-headline-md
+           leading-tight
+           text-primary
+           mt-2">
+    Khoảnh khắc<br class="block lg:hidden"> Couple Foundation
+</h2>
             </div>
         </div>
 
@@ -277,33 +415,52 @@
 
     </div>
 </section>
-<section class="py-20 bg-surface-container-low/50 relative overflow-hidden">
-<div class="max-w-container-max mx-auto px-margin-desktop flex flex-col items-center text-center">
-<span class="inline-block
-             text-dynamic-pink
-             font-montserrat
-             text-[18px] md:text-[20px]
-             font-extrabold
-             uppercase
-             tracking-[0.3em]
-             mb-6">
+<section class="py-12 md:py-20 bg-surface-container-low/50 relative overflow-hidden">
+    <div class="max-w-container-max mx-auto px-5 md:px-margin-desktop">
+<span
+class="block
+text-center lg:text-left
+text-dynamic-pink
+font-montserrat
+text-[14px] sm:text-[16px] lg:text-[20px]
+font-extrabold
+uppercase
+tracking-[0.2em] sm:tracking-[0.25em] lg:tracking-[0.3em]
+mb-4 sm:mb-5 lg:mb-6">
     HÀNH TRÌNH TIÊU BIỂU
 </span>
-<p class="text-[17px] md:text-[19px] text-on-surface-variant  leading-8 mb-8">
-      Trong hành trình lan tỏa yêu thương của Couple Foundation, <strong class="text-dynamic-pink">"Áo khoác cũ đổi mới – Trao hơi ấm, Góp yêu thương"</strong> là dấu ấn đặc biệt được trân trọng và tự hào gìn giữ. Không chỉ trao thêm một vòng đời cho mỗi chiếc áo, hành trình còn kết nối hàng chục nghìn<br> khách hàng, đối tác và thành viên Couple Group cùng chung tay viết tiếp những điều tử tế.
-    </p>
+<p class="text-[15px] sm:text-[16px] lg:text-[19px]
+          leading-7 lg:leading-8
+          text-on-surface-variant
+          max-w-3xl
+          text-justify lg:text-left
+          mx-auto
+          mb-6 sm:mb-8">
+
+    Trong hành trình lan tỏa yêu thương của Couple Foundation,
+    <strong class="text-dynamic-pink">
+        "Áo khoác cũ đổi mới – Trao hơi ấm, Góp yêu thương"
+    </strong>
+    là dấu ấn đặc biệt được trân trọng và tự hào gìn giữ.
+    Không chỉ trao thêm một vòng đời cho mỗi chiếc áo,
+    hành trình còn kết nối hàng chục nghìn khách hàng,
+    đối tác và thành viên Couple Group cùng chung tay viết tiếp
+    những điều tử tế.
+
+</p>
 <div class="flex flex-col items-center">
 <a href="#akcdm"
    class="flex flex-col items-center cursor-pointer group">
 
-    <span class="material-symbols-outlined
-                 text-dynamic-pink
-                 text-5xl
-                 animate-bounce-slow
-                 group-hover:scale-110
-                 transition">
-        expand_more
-    </span>
+    <span
+    class="material-symbols-outlined
+           text-dynamic-pink
+           text-4xl sm:text-5xl
+           animate-bounce-slow
+           group-hover:scale-110
+           transition">
+    expand_more
+</span>
 
 </a>
 </div>
@@ -336,52 +493,126 @@
     </div>
 </div>
 <div class="w-full lg:w-1/2 flex flex-col justify-center">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-2 uppercase">CHƯƠNG TRÌNH ÁO KHOÁC CŨ ĐỔI MỚI</h2>
-<p class="font-headline-md text-dynamic-pink mb-2 italic">"Trao hơi ấm – Góp yêu thương."</p>
-<div class="space-y-2">
-<p class="font-body-md text-body-md text-on-surface-variant opacity-80 leading-relaxed">
-                            Có những chiếc áo đã hoàn thành hành trình với một người, nhưng vẫn còn đủ giá trị để bắt đầu hành trình với một người khác. Ý tưởng của chương trình là khách hàng mang những chiếc áo khoác còn sử dụng tốt trở về Couple TX để tiếp tục sưởi ấm một em nhỏ, một người lao động hay một hoàn cảnh còn nhiều khó khăn. Từ những chiếc áo được trao lại, Couple TX kết nối những tấm lòng để giá trị của sản phẩm không dừng lại ở công năng, mà được tiếp nối bằng giá trị của sự sẻ chia.
-                        </p>
-<div class="flex items-center gap-4">
-<div class="h-[1px] flex-grow bg-outline-variant"></div>
-<span class="material-symbols-outlined text-dynamic-pink">favorite</span>
-<div class="h-[1px] flex-grow bg-outline-variant"></div>
-</div>
-<h3 class="font-headline-md text-primary">Hành trình "Trao hơi ấm – Góp yêu thương"</h3>
-<p class="font-body-md text-body-md text-on-surface-variant opacity-80 leading-relaxed">
-                            Đó là niềm tin đã thôi thúc Couple TX bền bỉ gìn giữ chương trình từ năm 2013. Chúng tôi tin rằng mỗi sản phẩm đều xứng đáng có thêm một vòng đời và mỗi vòng đời được tiếp nối đều có thể mang đến một điều tốt đẹp cho cộng đồng. Suốt hơn 13 năm, hàng chục nghìn khách hàng, đối tác và cán bộ nhân viên đã cùng Couple TX viết nên hành trình ấy. Chúng tôi tự hào không phải vì đã trao đi bao nhiêu chiếc áo, mà vì mỗi chiếc áo đều mang theo sự tin tưởng của người trao, niềm vui của người nhận và một thông điệp giản dị: "Yêu thương luôn có thể được tiếp nối."
-                        </p>
-</div>
+
+    <h2 class="font-headline-lg
+               text-[24px] sm:text-[30px] lg:text-headline-lg
+               leading-tight
+               text-primary
+               uppercase
+               mb-3
+               text-center lg:text-left">
+        CHƯƠNG TRÌNH<br class="block lg:hidden"> ÁO KHOÁC CŨ ĐỔI MỚI
+    </h2>
+
+    <p class="text-[18px] sm:text-[20px] lg:text-headline-md
+              text-dynamic-pink
+              italic
+              mb-5
+              text-center lg:text-left">
+        "Trao hơi ấm – Góp yêu thương."
+    </p>
+
+    <div class="space-y-5">
+
+        <p class="text-[15px] sm:text-[16px] lg:text-body-md
+                  leading-7
+                  text-on-surface-variant
+                  opacity-80
+                  text-justify lg:text-left">
+            Có những chiếc áo đã hoàn thành hành trình với một người, nhưng vẫn còn đủ giá trị để bắt đầu hành trình với một người khác. Ý tưởng của chương trình là khách hàng mang những chiếc áo khoác còn sử dụng tốt trở về Couple TX để tiếp tục sưởi ấm một em nhỏ, một người lao động hay một hoàn cảnh còn nhiều khó khăn. Từ những chiếc áo được trao lại, Couple TX kết nối những tấm lòng để giá trị của sản phẩm không dừng lại ở công năng, mà được tiếp nối bằng giá trị của sự sẻ chia.
+        </p>
+
+        <div class="flex items-center gap-3 sm:gap-4 py-2">
+            <div class="h-px flex-1 bg-outline-variant"></div>
+
+            <span class="material-symbols-outlined text-dynamic-pink text-[22px]">
+                favorite
+            </span>
+
+            <div class="h-px flex-1 bg-outline-variant"></div>
+        </div>
+
+        <h3 class="text-[18px] sm:text-[26px] lg:text-headline-md
+                   font-bold
+                   text-primary
+                   text-center lg:text-left">
+            Hành trình<br class="block lg:hidden"> "Trao hơi ấm – Góp yêu thương"
+        </h3>
+
+        <p class="text-[15px] sm:text-[16px] lg:text-body-md
+                  leading-7
+                  text-on-surface-variant
+                  opacity-80
+                  text-justify lg:text-left">
+            Đó là niềm tin đã thôi thúc Couple TX bền bỉ gìn giữ chương trình từ năm 2013. Chúng tôi tin rằng mỗi sản phẩm đều xứng đáng có thêm một vòng đời và mỗi vòng đời được tiếp nối đều có thể mang đến một điều tốt đẹp cho cộng đồng. Suốt hơn 13 năm, hàng chục nghìn khách hàng, đối tác và cán bộ nhân viên đã cùng Couple TX viết nên hành trình ấy. Chúng tôi tự hào không phải vì đã trao đi bao nhiêu chiếc áo, mà vì mỗi chiếc áo đều mang theo sự tin tưởng của người trao, niềm vui của người nhận và một thông điệp giản dị: "Yêu thương luôn có thể được tiếp nối."
+        </p>
+
+    </div>
+
 </div>
 </div>
 </div>
 </section>
 
 <!-- Section 6: Final CTA -->
-<section class="bg-primary py-24">
-    <div class="max-w-container-max mx-auto px-margin-desktop text-center text-soft-white">
-        <h2 class="font-display-lg text-display-lg mb-8 leading-tight">
-            Cùng chúng tôi viết tiếp hành trình hạnh phúc
+<section class="bg-primary py-12 sm:py-16 lg:py-24">
+
+    <div class="max-w-container-max mx-auto px-5 md:px-margin-desktop text-center text-soft-white">
+
+        <h2 class="font-display-lg
+                   text-[28px] sm:text-[36px] lg:text-display-lg
+                   leading-tight
+                   mb-5 lg:mb-8">
+            Cùng chúng tôi<br class="block lg:hidden">
+            viết tiếp hành trình hạnh phúc
         </h2>
 
-        <p class="font-body-lg text-soft-white/80 max-w-2xl mx-auto mb-12">
-            Sự đồng hành của bạn là động lực to lớn nhất để chúng tôi tiếp tục lan tỏa những giá trị nhân văn đến cộng đồng.
+        <p class="text-[15px] sm:text-[16px] lg:text-body-lg
+                  leading-7
+                  text-soft-white/80
+                  max-w-2xl
+                  mx-auto
+                  mb-8 lg:mb-12">
+            Sự đồng hành của bạn là động lực to lớn nhất để chúng tôi tiếp tục
+            lan tỏa những giá trị nhân văn đến cộng đồng.
         </p>
 
-        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+        <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
 
             <a href="mailto:contact@couplegroup.com?subject=Đăng ký đồng hành cùng Couple Foundation"
-               class="bg-dynamic-pink text-soft-white px-12 py-4 rounded-lg font-bold hover:bg-secondary-container transition-all inline-flex items-center justify-center">
+               class="w-full sm:w-auto
+                      bg-dynamic-pink
+                      text-soft-white
+                      px-8 sm:px-10 lg:px-12
+                      py-3.5 lg:py-4
+                      rounded-lg
+                      font-bold
+                      text-[15px] sm:text-base
+                      hover:bg-secondary-container
+                      transition-all
+                      inline-flex items-center justify-center">
                 Đồng hành cùng chúng tôi
             </a>
 
             <a href="mailto:contact@couplegroup.com"
-               class="border border-soft-white text-soft-white px-12 py-4 rounded-lg font-bold hover:bg-soft-white/10 transition-all inline-flex items-center justify-center">
+               class="w-full sm:w-auto
+                      border border-soft-white
+                      text-soft-white
+                      px-8 sm:px-10 lg:px-12
+                      py-3.5 lg:py-4
+                      rounded-lg
+                      font-bold
+                      text-[15px] sm:text-base
+                      hover:bg-soft-white/10
+                      transition-all
+                      inline-flex items-center justify-center">
                 Liên hệ
             </a>
 
         </div>
+
     </div>
+
 </section>
 </main>
 <!-- Footer (Synced from Home) -->

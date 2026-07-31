@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tin tức | Couple Group - Heritage &amp; Pulse</title>
+<!-- Google Fonts: Montserrat (Headline) & Inter (Body) -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind-config.js"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #002a58 0%, #004080 100%);
+        }
+        .article-card:hover .article-image {
+            transform: scale(1.05);
+        }
+        .transition-standard {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+<link rel="stylesheet" href="assets/css/responsive-fixes.css">
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+<!-- TopNavBar -->
+<div id="site-header-mount"></div>
+<script src="assets/js/site-header.js"></script>
+<!-- Hero Section -->
+<header class="pt-20">
+<div class="hero-gradient h-48 md:h-64 w-full flex items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+</div>
+<div class="relative z-10 text-center">
+<h1 class="font-display-lg text-display-lg text-soft-white uppercase tracking-wider">Tin tức</h1>
+<div class="mt-4 flex items-center justify-center gap-2">
+<span class="h-[1px] w-8 bg-dynamic-pink"></span>
+<p class="font-label-sm text-label-sm text-surface-container-highest tracking-widest uppercase">Cập nhật mới nhất</p>
+<span class="h-[1px] w-8 bg-dynamic-pink"></span>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content: News Feed -->
+<main class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop py-20 bg-soft-white">
+<!-- Bento-ish Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Article 1: Featured (Large) -->
+<a href="news1.html" class="block group article-card cursor-pointer md:col-span-8">
+    <article>
+        <div class="relative overflow-hidden rounded-lg aspect-[16/9] mb-6">
+            <img class="w-full h-full object-cover transition-standard article-image"
+                 src="assets/khaitruong.webp"/>
+
+            <div class="absolute top-4 left-4">
+                <span class="bg-deep-navy text-soft-white px-4 py-1 font-label-sm text-label-sm rounded-full">
+                    Sự kiện
+                </span>
+            </div>
+        </div>
+
+        <div class="space-y-3">
+            <h2 class="font-headline-lg text-headline-lg text-primary group-hover:text-secondary transition-colors uppercase leading-tight">
+                COUPLE GROUP CHÍNH THỨC KHAI TRƯƠNG VĂN PHÒNG MỚI
+            </h2>
+
+            <p class="text-on-surface-variant font-body-md line-clamp-3">
+                Bước ngoặt quan trọng đánh dấu sự phát triển bền vững và tầm nhìn vươn tầm quốc tế của Couple Group trong không gian làm việc sáng tạo, hiện đại bậc nhất.
+            </p>
+
+            <span class="inline-flex items-center gap-2 text-dynamic-pink font-label-md font-bold group/link">
+                XEM THÊM
+                <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">
+                    arrow_forward
+                </span>
+            </span>
+        </div>
+    </article>
+</a>
+<!-- Article 2: Side Column -->
+<a href="news2.html" class="block md:col-span-4 group article-card cursor-pointer">
+    <article>
+        <div class="relative overflow-hidden rounded-lg aspect-[4/5] mb-6">
+            <img class="w-full h-full object-cover transition-standard article-image"
+                 data-alt="A vibrant retail store front of Couple TX during a grand opening event."
+                 src="assets/khokhan.jpg"/>
+
+            <div class="absolute top-4 left-4">
+                <span class="bg-deep-navy text-soft-white px-4 py-1 font-label-sm text-label-sm rounded-full">
+                    Kinh doanh
+                </span>
+            </div>
+        </div>
+
+        <div class="space-y-3">
+            <h3 class="font-headline-md text-headline-md text-primary group-hover:text-secondary transition-colors uppercase">
+                Điều gì giúp Couple TX mở cùng lúc 8 cửa hàng dù thị trường khó khăn?
+            </h3>
+
+            <span class="inline-flex items-center gap-2 text-dynamic-pink font-label-md font-bold group/link">
+                XEM THÊM
+                <span class="material-symbols-outlined text-[18px] group-hover/link:translate-x-1 transition-transform">
+                    arrow_forward
+                </span>
+            </span>
+        </div>
+    </article>
+</a>
+<!-- Divider Line -->
+<!-- Divider Line -->
+<div class="md:col-span-12 h-px bg-outline-variant my-8"></div>
+
+<!-- Slider -->
+<div class="md:col-span-12 overflow-hidden">
+    <div id="news-slider" class="flex transition-transform duration-700 ease-in-out">
+
+        <!-- ===== PAGE 1 ===== -->
+        <div class="min-w-full grid md:grid-cols-2 gap-8">
+
+            <!-- Article 3 -->
+            <!-- Article 3 -->
+<a href="news3.html" class="block group article-card cursor-pointer">
+    <article class="flex flex-col md:flex-row gap-6">
+        <div class="md:w-1/2 overflow-hidden rounded-lg aspect-[4/3]">
+            <img class="w-full h-full object-cover transition-standard article-image"
+                src="assets/kickoff.webp">
+        </div>
+
+        <div class="md:w-1/2 flex flex-col justify-center space-y-3">
+            <div class="font-label-sm text-label-sm text-on-surface-variant">
+                25 THÁNG 10, 2023
+            </div>
+
+            <h3 class="font-headline-md text-headline-md text-primary uppercase">
+                Kick off GOING GREEN – TIẾP LỬA SÁNG TẠO 2023
+            </h3>
+
+            <span class="inline-flex items-center gap-2 text-dynamic-pink font-bold">
+                XEM THÊM
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </span>
+        </div>
+    </article>
+</a>
+
+<!-- Article 4 -->
+<a href="https://www.vietnamplus.vn/thuong-hieu-couple-tx-cung-trong-hieu-lan-toa-thong-diep-ve-moi-truong-post780749.vnp" class="block group article-card cursor-pointer">
+    <article class="flex flex-col md:flex-row gap-6">
+        <div class="md:w-1/2 overflow-hidden rounded-lg aspect-[4/3]">
+            <img class="w-full h-full object-cover transition-standard article-image"
+                src="assets/tronghieu1.jpg">
+        </div>
+
+        <div class="md:w-1/2 flex flex-col justify-center space-y-3">
+            <div class="font-label-sm text-label-sm text-on-surface-variant">
+                12 THÁNG 09, 2023
+            </div>
+
+            <h3 class="font-headline-md text-headline-md text-primary uppercase">
+                COUPLE TX KẾT HỢP CÙNG TRỌNG HIẾU LAN TỎA THÔNG ĐIỆP SỐNG XANH
+            </h3>
+
+            <span class="inline-flex items-center gap-2 text-dynamic-pink font-bold">
+                XEM THÊM
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </span>
+        </div>
+    </article>
+</a>
+
+        </div>
+
+        <!-- ===== PAGE 2 ===== -->
+        <div class="min-w-full grid md:grid-cols-2 gap-8">
+
+            <!-- COPY article mới vào đây -->
+            <!-- Article 3 -->
+<a href="https://www.brandsvietnam.com/congdong/topic/17971-new-direction-1-dinh-huong-moi-cua-couple-tx-mo-rong-tu-cot-loi-con-nguoi-thuong-hieu-cong-dong" class="block group article-card cursor-pointer">
+    <article class="flex flex-col md:flex-row gap-6">
+        <div class="md:w-1/2 overflow-hidden rounded-lg aspect-[4/3]">
+            <img class="w-full h-full object-cover transition-standard article-image"
+                src="assets/tintuc_dinhhuongmoi.jpg">
+        </div>
+
+        <div class="md:w-1/2 flex flex-col justify-center space-y-3">
+            <div class="font-label-sm text-label-sm text-on-surface-variant">
+                01/08/2019
+            </div>
+
+            <h3 class="font-headline-md text-headline-md text-primary uppercase">
+                New Direction #1 | Định hướng mới của Couple TX: "Mở rộng từ cốt lõi con người, thương hiệu, cộng đồng"
+            </h3>
+
+            <span class="inline-flex items-center gap-2 text-dynamic-pink font-bold">
+                XEM THÊM
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </span>
+        </div>
+    </article>
+</a>
+
+<!-- Article 4 -->
+<a href="https://stylerepublik.vn/couple-tx-tai-dinh-vi-thuong-hieu" class="block group article-card cursor-pointer">
+    <article class="flex flex-col md:flex-row gap-6">
+        <div class="md:w-1/2 overflow-hidden rounded-lg aspect-[4/3]">
+            <img class="w-full h-full object-cover transition-standard article-image"
+                src="assets/tintuc_chuyenminh.jpg">
+        </div>
+
+        <div class="md:w-1/2 flex flex-col justify-center space-y-3">
+            <div class="font-label-sm text-label-sm text-on-surface-variant">
+                
+            </div>
+
+            <h3 class="font-headline-md text-headline-md text-primary uppercase">
+                Couple TX tái định vị thương hiệu: Bước chuyển mình để vươn tầm quốc tế
+            </h3>
+
+            <span class="inline-flex items-center gap-2 text-dynamic-pink font-bold">
+                XEM THÊM
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </span>
+        </div>
+    </article>
+</a>
+        </div>
+
+        <!-- ===== PAGE 3 ===== -->
+        <div class="min-w-full grid md:grid-cols-2 gap-8">
+
+            <!-- Article 3 -->
+<a href="https://vnexpress.net/couple-tx-thay-doi-chien-luoc-san-pham-4426380.html" class="block group article-card cursor-pointer">
+    <article class="flex flex-col md:flex-row gap-6">
+        <div class="md:w-1/2 overflow-hidden rounded-lg aspect-[4/3]">
+            <img class="w-full h-full object-cover transition-standard article-image"
+                src="assets/tintuc_chienluoc.webp">
+        </div>
+
+        <div class="md:w-1/2 flex flex-col justify-center space-y-3">
+            <div class="font-label-sm text-label-sm text-on-surface-variant">
+                12 THÁNG 02, 2022
+            </div>
+
+            <h3 class="font-headline-md text-headline-md text-primary uppercase">
+                Couple TX thay đổi chiến lược sản phẩm
+            </h3>
+
+            <span class="inline-flex items-center gap-2 text-dynamic-pink font-bold">
+                XEM THÊM
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </span>
+        </div>
+    </article>
+</a>
+
+<!-- Article 4 -->
+<a href="https://coupletx.com/blogs/ban-tin-couple/13-nam-hanh-trinh-truong-thanh-cua-couple-tx" class="block group article-card cursor-pointer">
+    <article class="flex flex-col md:flex-row gap-6">
+        <div class="md:w-1/2 overflow-hidden rounded-lg aspect-[4/3]">
+            <img class="w-full h-full object-cover transition-standard article-image"
+                src="assets/tintuc_13nam.webp">
+        </div>
+
+        <div class="md:w-1/2 flex flex-col justify-center space-y-3">
+            <div class="font-label-sm text-label-sm text-on-surface-variant">
+                
+            </div>
+
+            <h3 class="font-headline-md text-headline-md text-primary uppercase">
+                13 NĂM HÀNH TRÌNH TRƯỞNG THÀNH CỦA COUPLE TX
+            </h3>
+
+            <span class="inline-flex items-center gap-2 text-dynamic-pink font-bold">
+                XEM THÊM
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </span>
+        </div>
+    </article>
+</a>
+
+        </div>
+
+    </div>
+</div>
+</div>
+<!-- Pagination (Minimalist) -->
+<div class="mt-20 flex justify-center items-center gap-4">
+
+    <button id="prevBtn"
+        class="w-10 h-10 flex items-center justify-center rounded-full border border-outline hover:bg-surface-container transition-colors">
+
+        <span class="material-symbols-outlined">
+            chevron_left
+        </span>
+
+    </button>
+
+    <div class="flex gap-2">
+
+        <button class="page-dot w-10 h-10 rounded-full bg-deep-navy text-white">
+            1
+        </button>
+
+        <button class="page-dot w-10 h-10 rounded-full hover:bg-surface-container">
+            2
+        </button>
+
+        <button class="page-dot w-10 h-10 rounded-full hover:bg-surface-container">
+            3
+        </button>
+
+    </div>
+
+    <button id="nextBtn"
+        class="w-10 h-10 flex items-center justify-center rounded-full border border-outline hover:bg-surface-container transition-colors">
+
+        <span class="material-symbols-outlined">
+            chevron_right
+        </span>
+
+    </button>
+
+</div>
+</main>
+<!-- Footer (Identical to SCREEN_3) -->
+<div id="site-footer-mount"></div>
+<script src="assets/js/site-footer.js"></script>
+<script src="assets/js/mobile-menu.js"></script>
+<script>
+        // Simple header effect on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('header');
+            if (window.scrollY > 20) {
+                nav.classList.add('py-2', 'shadow-md');
+                nav.classList.remove('py-4', 'shadow-sm');
+            } else {
+                nav.classList.add('py-4', 'shadow-sm');
+                nav.classList.remove('py-2', 'shadow-md');
+            }
+        });
+    /* Mobile menu logic: xem assets/js/mobile-menu.js */
+
+const slider = document.getElementById("news-slider");
+
+const pages = document.querySelectorAll(".page-dot");
+
+let currentPage = 0;
+
+const totalPages = pages.length;
+
+function updateSlider() {
+
+    slider.style.transform = `translateX(-${currentPage * 100}%)`;
+
+    pages.forEach((btn, index) => {
+
+        if(index === currentPage){
+
+            btn.classList.add("bg-deep-navy","text-white");
+
+            btn.classList.remove("hover:bg-surface-container");
+
+        }else{
+
+            btn.classList.remove("bg-deep-navy","text-white");
+
+            btn.classList.add("hover:bg-surface-container");
+
+        }
+
+    });
+
+}
+
+document.getElementById("nextBtn").onclick = () => {
+
+    currentPage++;
+
+    if(currentPage >= totalPages){
+
+        currentPage = 0;
+
+    }
+
+    updateSlider();
+
+}
+
+document.getElementById("prevBtn").onclick = () => {
+
+    currentPage--;
+
+    if(currentPage < 0){
+
+        currentPage = totalPages - 1;
+
+    }
+
+    updateSlider();
+
+}
+
+pages.forEach((btn,index)=>{
+
+    btn.onclick=()=>{
+
+        currentPage=index;
+
+        updateSlider();
+
+    }
+
+});
+</script>
+</body></html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html class="light scroll-smooth" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Quỹ Couple Foundation - Kết Nối Trái Tim | Couple Group</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<script src="assets/js/tailwind-config.js"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 240px;
+            gap: 24px;
+        }
+        .hero-gradient {
+    background: linear-gradient(
+        to right,
+        rgba(0, 64, 128, 0.25) 0%,
+        rgba(0, 64, 128, 0.10) 50%,
+        rgba(0, 64, 128, 0) 100%
+    );
+}
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .shadow-premium {
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        .shadow-soft {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        .card-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        /* Carousel Specific Styles */
+        .carousel-container {
+            overflow: hidden;
+            cursor: grab;
+            user-select: none;
+            position: relative;
+        }
+        .carousel-container:active {
+            cursor: grabbing;
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+            will-change: transform;
+        }
+        .carousel-item {
+            flex: 0 0 auto;
+            padding: 0 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .carousel-item img {
+            border-radius: 32px;
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: all 0.4s ease;
+        }
+        @media (hover: hover) {
+            .carousel-item:hover {
+                transform: scale(1.02);
+            }
+            .carousel-item:hover img {
+                box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+            }
+        }
+    </style>
+<link rel="stylesheet" href="assets/css/responsive-fixes.css">
+</head>
+<body class="bg-soft-white text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar (Synced from Home) -->
+<div id="site-header-mount"></div>
+<script src="assets/js/site-header.js"></script>
+<main>
+<!-- Hero Section (Exactly as source) -->
+<section class="relative flex flex-col lg:flex-row items-center justify-start overflow-hidden bg-white pt-32 pb-16 lg:py-44 h-auto lg:h-[700px]">
+<div class="relative lg:absolute lg:top-[110px] lg:-right-0 w-full lg:w-[65%] h-auto lg:h-[calc(100%-110px)] z-0 lg:rounded-[40px] overflow-hidden order-2 lg:order-none mt-12 lg:mt-0">
+<video autoplay="" class="w-full h-full object-cover" loop="" muted="" playsinline="">
+<source src="https://cdn.hstatic.net/files/1000341387/file/videofoundation.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="container mx-auto px-margin-desktop relative z-10 order-1 lg:order-none">
+<div class="max-w-2xl hero-title-entrance text-left ml-0">
+<span class="inline-block px-4 py-1 bg-dynamic-pink text-white rounded-full font-bold mb-4 tracking-[0.2em] uppercase text-[10px]">Couple Foundation</span>
+<h1 class="font-montserrat font-extrabold leading-[1.1] editorial-text uppercase text-[#243447]">
+    <span class="block text-[44px] lg:text-[50px]">
+        Couple <br> Foundation
+    </span>
+</h1>
+<div class="flex flex-wrap gap-5 justify-start mt-10">
+<a href="#activities"
+   class="bg-dynamic-pink text-soft-white px-8 py-4 rounded-lg
+          text-[17px] font-semibold
+          flex items-center gap-2
+          hover:bg-opacity-90 transition-all">
+    Hành trình thiện nguyện "Lan tỏa yêu thương"
+    <span class="material-symbols-outlined">favorite</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Floating Decorative Images -->
+</section>
+<!-- Section 1: Introduction -->
+<section id="activities" class="pt-32 pb-8 bg-soft-white">
+<div class="max-w-4xl mx-auto px-margin-mobile text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8 uppercase tracking-wide">Couple Foundation</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed font-body-md">
+Được thành lập từ năm 2013, Couple Foundation là quỹ thiện nguyện của Couple Group<br> ra đời với mong muốn cùng chung tay lan tỏa yêu thương đến cộng đồng. </p>
+</div>
+</section>
+<!-- Mission Section (Kept as Intro) -->
+<section class="py-24 bg-soft-white">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col gap-16 max-w-container-max mx-auto">
+<div class="w-full">
+<div class="relative rounded-2xl overflow-hidden shadow-premium max-w-[1000px] mx-auto h-[250px] md:h-[500px]">
+<img alt="Sứ mệnh Couple Foundation" class="w-full object-cover rounded-3xl shadow-premium h-full" src="assets/heart.webp">
+<div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black/60 to-transparent">
+<p class="text-soft-white font-headline-md">Sứ mệnh "Kết nối trái tim"</p>
+</div>
+</div>
+</div>
+<div class="w-full max-w-[1000px] mx-auto space-y-8">
+<div class="space-y-4">
+    <h2 class="font-headline-lg text-headline-lg text-primary md:text-display-lg">Hành trình lan tỏa yêu thương</h2>
+    <div class="w-20 h-1 bg-dynamic-pink rounded-full"></div>
+</div>
+<div class="space-y-6">
+    <p class="font-body-md text-body-md text-on-surface-variant opacity-80 leading-relaxed">
+        Lan tỏa yêu thương không bắt đầu từ những điều lớn lao. Đó là hành trình được vun đắp từ những hành động tử tế, khi nhiều người cùng chung một tấm lòng.
+    </p>
+    <p class="font-body-md text-body-md text-on-surface-variant opacity-80 leading-relaxed">
+        Trên mỗi hành trình, chúng tôi không chỉ mang theo những phần quà, mà còn mang theo sự hiện diện, sự lắng nghe và những sẻ chia chân thành đến với trẻ em, trường học vùng khó khăn, mái ấm, viện dưỡng lão và những gia đình cần được giúp đỡ. Có những món quà được trao đi, có những câu chuyện được kể, có những nụ cười được thắp sáng và cũng có những cảm xúc ở lại rất lâu trong lòng mỗi người đồng hành.
+    </p>
+    <p class="font-body-md text-body-md text-on-surface-variant opacity-80 leading-relaxed">
+        Suốt hơn một thập kỷ, Couple Foundation đã trở thành nơi kết nối những tấm lòng, để mỗi thành viên Couple Group đều có cơ hội góp một phần yêu thương theo cách của riêng mình. Bởi chúng tôi tin rằng, khi yêu thương được sẻ chia, những giá trị tốt đẹp sẽ tiếp tục được lan tỏa.
+    </p>
+</div>
+<div class="grid grid-cols-2 gap-8 pt-6">
+<div>
+    <h4 class="font-display-lg text-headline-lg text-dynamic-pink mb-1">2013</h4>
+    <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-tighter">Được thành lập</p>
+</div>
+<div>
+<h4 class="font-display-lg text-headline-lg text-dynamic-pink mb-1">10k+</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-tighter">Áo khoác trao đi mỗi năm</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Activity Gallery -->
+<section class="py-24 bg-soft-white" id="gallery">
+    <div class="max-w-container-max mx-auto px-margin-desktop">
+
+        <div class="flex items-end justify-between mb-12">
+            <div>
+                <span class="text-dynamic-pink uppercase tracking-[0.3em] text-xs font-bold">
+                    Gallery
+                </span>
+                <h2 class="font-headline-md text-headline-md text-primary mt-2">
+                    Khoảnh khắc Couple Foundation
+                </h2>
+            </div>
+        </div>
+
+        <!-- Wrapper -->
+        <div class="relative">
+
+            <!-- Nút trái -->
+            <button
+                id="carousel-prev"
+                class="hidden lg:flex absolute -left-8 top-1/2 -translate-y-1/2
+                       w-14 h-14 rounded-full bg-white shadow-lg
+                       items-center justify-center z-20
+                       hover:bg-primary hover:text-white transition-all">
+
+                <span class="material-symbols-outlined text-3xl">
+                    chevron_left
+                </span>
+            </button>
+
+            <!-- Carousel -->
+            <div class="carousel-container">
+                <div class="carousel-track" id="carousel-track">
+
+                    <div class="carousel-item">
+                        <img src="assets/gallery_1.jpg" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/gallery_2.jpg" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/gallery_3.jpg" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/gallery_4.jpg" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="assets/gallery_5.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/gallery_6.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/gallery_7.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/gallery_8.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/gallery_9.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/gallery_10.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/gallery_11.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/gallery_12.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/gallery_13.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/gallery_14.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/gallery_15.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/gallery_16.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/gallery_17.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nút phải -->
+            <button
+                id="carousel-next"
+                class="hidden lg:flex absolute -right-8 top-1/2 -translate-y-1/2
+                       w-14 h-14 rounded-full bg-white shadow-lg
+                       items-center justify-center z-20
+                       hover:bg-primary hover:text-white transition-all">
+
+                <span class="material-symbols-outlined text-3xl">
+                    chevron_right
+                </span>
+            </button>
+
+        </div>
+
+    </div>
+</section>
+<section class="py-20 bg-surface-container-low/50 relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop flex flex-col items-center text-center">
+<span class="inline-block
+             text-dynamic-pink
+             font-montserrat
+             text-[18px] md:text-[20px]
+             font-extrabold
+             uppercase
+             tracking-[0.3em]
+             mb-6">
+    HÀNH TRÌNH TIÊU BIỂU
+</span>
+<p class="text-[17px] md:text-[19px] text-on-surface-variant  leading-8 mb-8">
+      Trong hành trình lan tỏa yêu thương của Couple Foundation, <strong class="text-dynamic-pink">"Áo khoác cũ đổi mới – Trao hơi ấm, Góp yêu thương"</strong> là dấu ấn đặc biệt được trân trọng và tự hào gìn giữ. Không chỉ trao thêm một vòng đời cho mỗi chiếc áo, hành trình còn kết nối hàng chục nghìn<br> khách hàng, đối tác và thành viên Couple Group cùng chung tay viết tiếp những điều tử tế.
+    </p>
+<div class="flex flex-col items-center">
+<a href="#akcdm"
+   class="flex flex-col items-center cursor-pointer group">
+
+    <span class="material-symbols-outlined
+                 text-dynamic-pink
+                 text-5xl
+                 animate-bounce-slow
+                 group-hover:scale-110
+                 transition">
+        expand_more
+    </span>
+
+</a>
+</div>
+</div>
+<style>
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateY(0); opacity: 0.6; }
+      50% { transform: translateY(12px); opacity: 1; }
+    }
+    .animate-bounce-slow {
+      animation: bounce-slow 2s ease-in-out infinite;
+    }
+  </style>
+</section>
+<!-- Section 3: Activities Grid -->
+<section id="akcdm" class="py-24 bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="w-full lg:w-1/2">
+    <div class="relative rounded-3xl overflow-hidden shadow-premium aspect-[4/5] lg:aspect-square">
+        <video
+            class="absolute inset-0 w-full h-full object-cover"
+            autoplay
+            muted
+            loop
+            playsinline
+        >
+            <source src="https://cdn.hstatic.net/files/1000341387/file/akcdm_2026.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+<div class="w-full lg:w-1/2 flex flex-col justify-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2 uppercase">CHƯƠNG TRÌNH ÁO KHOÁC CŨ ĐỔI MỚI</h2>
+<p class="font-headline-md text-dynamic-pink mb-2 italic">"Trao hơi ấm – Góp yêu thương."</p>
+<div class="space-y-2">
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80 leading-relaxed">
+                            Có những chiếc áo đã hoàn thành hành trình với một người, nhưng vẫn còn đủ giá trị để bắt đầu hành trình với một người khác. Ý tưởng của chương trình là khách hàng mang những chiếc áo khoác còn sử dụng tốt trở về Couple TX để tiếp tục sưởi ấm một em nhỏ, một người lao động hay một hoàn cảnh còn nhiều khó khăn. Từ những chiếc áo được trao lại, Couple TX kết nối những tấm lòng để giá trị của sản phẩm không dừng lại ở công năng, mà được tiếp nối bằng giá trị của sự sẻ chia.
+                        </p>
+<div class="flex items-center gap-4">
+<div class="h-[1px] flex-grow bg-outline-variant"></div>
+<span class="material-symbols-outlined text-dynamic-pink">favorite</span>
+<div class="h-[1px] flex-grow bg-outline-variant"></div>
+</div>
+<h3 class="font-headline-md text-primary">Hành trình "Trao hơi ấm – Góp yêu thương"</h3>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80 leading-relaxed">
+                            Đó là niềm tin đã thôi thúc Couple TX bền bỉ gìn giữ chương trình từ năm 2013. Chúng tôi tin rằng mỗi sản phẩm đều xứng đáng có thêm một vòng đời và mỗi vòng đời được tiếp nối đều có thể mang đến một điều tốt đẹp cho cộng đồng. Suốt hơn 13 năm, hàng chục nghìn khách hàng, đối tác và cán bộ nhân viên đã cùng Couple TX viết nên hành trình ấy. Chúng tôi tự hào không phải vì đã trao đi bao nhiêu chiếc áo, mà vì mỗi chiếc áo đều mang theo sự tin tưởng của người trao, niềm vui của người nhận và một thông điệp giản dị: "Yêu thương luôn có thể được tiếp nối."
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Section 6: Final CTA -->
+<section class="bg-primary py-24">
+    <div class="max-w-container-max mx-auto px-margin-desktop text-center text-soft-white">
+        <h2 class="font-display-lg text-display-lg mb-8 leading-tight">
+            Cùng chúng tôi viết tiếp hành trình hạnh phúc
+        </h2>
+
+        <p class="font-body-lg text-soft-white/80 max-w-2xl mx-auto mb-12">
+            Sự đồng hành của bạn là động lực to lớn nhất để chúng tôi tiếp tục lan tỏa những giá trị nhân văn đến cộng đồng.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+
+            <a href="mailto:contact@couplegroup.com?subject=Đăng ký đồng hành cùng Couple Foundation"
+               class="bg-dynamic-pink text-soft-white px-12 py-4 rounded-lg font-bold hover:bg-secondary-container transition-all inline-flex items-center justify-center">
+                Đồng hành cùng chúng tôi
+            </a>
+
+            <a href="mailto:contact@couplegroup.com"
+               class="border border-soft-white text-soft-white px-12 py-4 rounded-lg font-bold hover:bg-soft-white/10 transition-all inline-flex items-center justify-center">
+                Liên hệ
+            </a>
+
+        </div>
+    </div>
+</section>
+</main>
+<!-- Footer (Synced from Home) -->
+<div id="site-footer-mount"></div>
+<script src="assets/js/site-footer.js"></script>
+<script src="assets/js/mobile-menu.js"></script>
+<script>
+        // Simple scroll interaction for Header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-2', 'shadow-md');
+                header.classList.remove('py-4', 'shadow-sm');
+            } else {
+                header.classList.add('py-4', 'shadow-sm');
+                header.classList.remove('py-2', 'shadow-md');
+            }
+        });
+    /* Mobile menu logic: xem assets/js/mobile-menu.js */
+// Custom Lightweight Infinite Carousel Logic
+    const initCarousel = () => {
+        const track = document.getElementById('carousel-track');
+        const container = track.parentElement;
+        const items = Array.from(track.children);
+        
+        // Clone items for infinite loop (double them)
+        items.forEach(item => {
+            const clone = item.cloneNode(true);
+            track.appendChild(clone);
+        });
+        
+        let isDragging = false;
+        let startX;
+        let scrollLeft;
+        let animationId;
+        let autoScrollPos = 0;
+        let isHovered = false;
+        const scrollSpeed = 0.5; // Adjust for speed
+
+        const getVisibleItems = () => {
+            const width = window.innerWidth;
+            if (width >= 1024) return 4.5;
+            if (width >= 768) return 2.5;
+            return 1.2;
+        };
+
+        const updateItemWidths = () => {
+            const visibleCount = getVisibleItems();
+            const containerWidth = container.offsetWidth;
+            const itemWidth = containerWidth / visibleCount;
+            Array.from(track.children).forEach(child => {
+                child.style.width = `${itemWidth}px`;
+            });
+            return itemWidth;
+        };
+
+        let itemWidth = updateItemWidths();
+        window.addEventListener('resize', () => {
+            itemWidth = updateItemWidths();
+        });
+
+        const step = () => {
+            if (!isDragging && !isHovered) {
+                autoScrollPos -= scrollSpeed;
+                const totalWidth = itemWidth * items.length;
+                
+                if (Math.abs(autoScrollPos) >= totalWidth) {
+                    autoScrollPos = 0;
+                }
+                track.style.transform = `translateX(${autoScrollPos}px)`;
+            }
+            animationId = requestAnimationFrame(step);
+        };
+
+        // Interaction Listeners
+        container.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.pageX - track.offsetLeft;
+            scrollLeft = autoScrollPos;
+            cancelAnimationFrame(animationId);
+        });
+
+        window.addEventListener('mouseup', () => {
+            if (isDragging) {
+                isDragging = false;
+                step();
+            }
+        });
+
+        window.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            const x = e.pageX - track.offsetLeft;
+            const walk = (x - startX);
+            autoScrollPos = scrollLeft + walk;
+            
+            // Boundary loop for manual drag
+            const totalWidth = itemWidth * items.length;
+            if (autoScrollPos > 0) autoScrollPos = -totalWidth;
+            if (Math.abs(autoScrollPos) >= totalWidth * 2) autoScrollPos = -totalWidth;
+            
+            track.style.transform = `translateX(${autoScrollPos}px)`;
+        });
+
+        // Touch Support
+        container.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            startX = e.touches[0].pageX - track.offsetLeft;
+            scrollLeft = autoScrollPos;
+        });
+
+        container.addEventListener('touchend', () => {
+            isDragging = false;
+        });
+
+        container.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            const x = e.touches[0].pageX - track.offsetLeft;
+            const walk = (x - startX);
+            autoScrollPos = scrollLeft + walk;
+            track.style.transform = `translateX(${autoScrollPos}px)`;
+        });
+
+        container.addEventListener('mouseenter', () => isHovered = true);
+        container.addEventListener('mouseleave', () => isHovered = false);
+
+        // Optional Buttons
+        document.getElementById('carousel-next')?.addEventListener('click', () => {
+            autoScrollPos -= itemWidth;
+            track.style.transform = `translateX(${autoScrollPos}px)`;
+        });
+        document.getElementById('carousel-prev')?.addEventListener('click', () => {
+            autoScrollPos += itemWidth;
+            track.style.transform = `translateX(${autoScrollPos}px)`;
+        });
+
+        // Start animation
+        step();
+    };
+
+    document.addEventListener('DOMContentLoaded', initCarousel);
+    </script>
+</body></html>

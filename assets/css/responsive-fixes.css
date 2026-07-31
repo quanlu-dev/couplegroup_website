@@ -1,0 +1,49 @@
+/* ============================================================
+   RESPONSIVE SAFETY-NET CHO MÀN HÌNH RẤT NHỎ (320px–340px)
+   - File này CHỈ cộng thêm quy tắc, không sửa/xoá bất kỳ class
+     Tailwind nào đang có => không ảnh hưởng desktop, không ảnh
+     hưởng các breakpoint mobile đang hiển thị đúng.
+   - Chỉ can thiệp những pattern có nguy cơ vỡ layout ở màn rất
+     hẹp: tràn ngang, chữ không xuống dòng, lưới 3 cột quá chật.
+   ============================================================ */
+
+/* An toàn tuyệt đối: không cho phép cuộn ngang trên toàn site
+   (body đã có overflow-x-hidden qua Tailwind, thêm html để chắc chắn
+   một số WebView/Zalo Browser vẫn tôn trọng overflow ở cấp <html>) */
+html {
+  overflow-x: hidden;
+}
+
+/* Container chính không được rộng hơn viewport trong mọi trường hợp */
+body {
+  max-width: 100vw;
+}
+
+/* Chống chữ dài (email, số điện thoại, tiêu đề) đẩy tràn ngang
+   trên màn hình rất hẹp, mà không đổi font-size/line-height đã set */
+@media (max-width: 340px) {
+  h1, h2, h3, h4, p, a, span {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* Header: giảm padding ngang một chút để logo + nút menu
+     không bị sát mép ở 320-340px (không đổi kích thước logo/nút) */
+  #main-header .max-w-container-max {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Trang "Hệ sinh thái": khối 3 video 9:16 cạnh nhau trong hero
+     quá chật ở 320-340px (mỗi cột chỉ còn ~70-80px) => chuyển
+     tạm về 2 cột cho dễ nhìn, giữ nguyên từ 341px trở lên */
+  .hero-img-container {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 340px) {
+  main .grid.grid-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

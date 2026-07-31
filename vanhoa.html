@@ -1,0 +1,519 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="vi"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Văn hóa Couple Group - Kiến tạo giá trị, Gắn kết tương lai</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<script src="assets/js/tailwind-config.js"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-overlay {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 64, 128, 0.22) 0%,
+        rgba(0, 64, 128, 0.08) 55%,
+        rgba(0, 64, 128, 0.02) 100%
+    );
+}
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .card-hover:hover .card-icon {
+            animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        .reveal-hidden {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Carousel Refactoring Styles */
+        .carousel-viewport {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            cursor: grab;
+        }
+        .carousel-viewport:active {
+            cursor: grabbing;
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 600ms ease-in-out;
+            will-change: transform;
+        }
+        .carousel-slide {
+            flex: 0 0 70%;
+            padding: 0 16px;
+            user-select: none;
+        }
+        @media (min-width: 768px) {
+            .carousel-slide { flex: 0 0 60%; }
+        }
+        @media (min-width: 1024px) {
+            .carousel-slide { flex: 0 0 45%; }
+        }
+    </style>
+<link rel="stylesheet" href="assets/css/responsive-fixes.css">
+</head>
+<body class="bg-surface-bright text-on-surface font-body-md selection:bg-dynamic-pink selection:text-white overflow-x-hidden pb-0">
+<!-- TopNavBar (Replaced with NavBar from SCREEN_2) -->
+<div id="site-header-mount"></div>
+<script src="assets/js/site-header.js"></script>
+<main>
+<!-- Hero Section -->
+<section class="relative flex flex-col lg:flex-row items-center justify-start overflow-hidden bg-white pt-32 pb-16 lg:py-44 h-auto lg:h-[700px]">
+<div class="relative lg:absolute lg:top-[110px] lg:-right-0 w-full lg:w-[68%] h-auto lg:h-[calc(100%-110px)] z-0 lg:rounded-[40px] overflow-hidden order-2 lg:order-none mt-12 lg:mt-0">
+<video autoplay="" class="w-full h-full object-cover" loop="" muted="" playsinline="">
+<source src="https://cdn.hstatic.net/files/1000341387/file/videovanhoa.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="container mx-auto px-margin-desktop relative z-10 order-1 lg:order-none">
+<div class="max-w-2xl hero-title-entrance text-left ml-0">
+<span class="inline-block px-4 py-1 bg-dynamic-pink text-white rounded-full font-bold mb-4 tracking-[0.2em] uppercase text-[10px]">Couple Group DNA</span>
+<h1 class="font-montserrat font-extrabold leading-[1.1] editorial-text uppercase text-[#243447]">
+    <span class="block text-[44px] lg:text-[50px]">
+        Couple Group<br> DNA
+    </span>
+</h1>
+<div class="flex flex-wrap gap-5 justify-start mt-10">
+<a href="#culture-content"
+   class="bg-dynamic-pink text-soft-white px-8 py-4 rounded-lg font-label-md text-label-md flex items-center gap-2 hover:bg-opacity-90 transition-all">
+    Tinh thần thiên nga
+    <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Floating Decorative Images -->
+</section>
+
+
+<!-- Redesigned Pillar: Hoạt động Đào tạo -->
+<section id="culture-content" class="py-24 bg-white reveal-hidden">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5 space-y-6">
+<span class="text-dynamic-pink font-bold tracking-widest uppercase text-label-md">KHỞI NGUỒN</span>
+<h2 class="font-display-lg text-headline-lg text-primary uppercase font-bold">TINH THẦN THIÊN NGA</h2>
+<p class="text-headline-md text-deep-navy/70 font-medium italic leading-tight">Kiêu hãnh đồng hành – Bền bỉ vươn xa</p>
+<div class="space-y-4 text-slate-gray font-body-md leading-relaxed">
+<p>Mỗi tổ chức đều có một bản sắc. Với Couple Group, đó là Tinh thần Thiên Nga – "Kiêu hãnh đồng hành – Bền bỉ vươn xa".</p>
+<p>Thiên Nga không chỉ là biểu tượng của sự thanh lịch, mà còn là hiện thân của ý chí bền bỉ trên những hành trình dài. Đó cũng là tinh thần mà Couple Group luôn gìn giữ: kiên định với mục tiêu, sẵn sàng đổi mới, đồng hành cùng nhau và không ngừng vươn tới những giá trị tốt đẹp hơn.</p>
+<p>Tinh thần ấy không chỉ định hướng cách phát triển doanh nghiệp, mà còn là nguồn cảm hứng để mỗi thành viên cùng tiến về một mục tiêu chung.</p>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="w-full h-auto overflow-hidden rounded-[32px] shadow-2xl">
+<img alt="Tinh thần Thiên Nga" class="w-full h-full object-cover" src="assets/slideshow_1.webp"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: SWAN SPIRIT -->
+<section class="py-24 bg-surface-container-low reveal-hidden">
+<div class="px-margin-desktop max-w-container-max mx-auto text-center mb-16">
+<div class=" mx-auto space-y-6">
+<span class="text-dynamic-pink font-bold tracking-widest uppercase text-label-md">GIÁ TRỊ CỐT LÕI</span>
+<h2 class="font-display-lg text-display-lg text-primary uppercase font-bold">SWAN SPIRIT</h2>
+<p class="text-headline-md text-deep-navy/70 font-medium italic">Nền tảng của mọi hành động</p>
+<p class="text-slate-gray font-body-md leading-relaxed">
+                        Văn hóa không được tạo nên từ những điều được nói, mà từ những điều được lựa chọn mỗi ngày.<br> SWAN SPIRIT là hệ giá trị cốt lõi định hình cách mỗi thành viên Couple Group suy nghĩ, hành động và đồng hành cùng nhau.<br> Respect – Ownership – Teamwork – Lean – Improving không chỉ là nền tảng trong công việc, mà còn là cam kết để xây dựng một môi trường làm việc<br> chuyên nghiệp, tôn trọng, chủ động và không ngừng cải tiến.
+                    </p>
+</div>
+</div>
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<!-- Card: Respect -->
+<div class="card-hover bg-white px-8 py-4 rounded-[24px] shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center">
+<span class="material-symbols-outlined card-icon text-5xl text-dynamic-pink mb-6">handshake</span>
+<h4 class="font-headline-md text-deep-navy mb-4 font-bold">Respect</h4>
+
+</div>
+<!-- Card: Ownership -->
+<div class="card-hover bg-white px-8 py-4 rounded-[24px] shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center">
+<span class="material-symbols-outlined card-icon text-5xl text-dynamic-pink mb-6">person_pin_circle</span>
+<h4 class="font-headline-md text-deep-navy mb-4 font-bold">Ownership</h4>
+</div>
+<!-- Card: Teamwork -->
+<div class="card-hover bg-white px-8 py-4 rounded-[24px] shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center">
+<span class="material-symbols-outlined card-icon text-5xl text-dynamic-pink mb-6">groups_3</span>
+<h4 class="font-headline-md text-deep-navy mb-4 font-bold">Teamwork</h4>
+</div>
+<!-- Card: Lean -->
+<div class="card-hover bg-white px-8 py-4 rounded-[24px] shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center">
+<span class="material-symbols-outlined card-icon text-5xl text-dynamic-pink mb-6">speed</span>
+<h4 class="font-headline-md text-deep-navy mb-4 font-bold">Lean</h4>
+</div>
+<!-- Card: Improving -->
+<div class="card-hover bg-white px-8 py-4 rounded-[24px] shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center">
+<span class="material-symbols-outlined card-icon text-5xl text-dynamic-pink mb-6">trending_up</span>
+<h4 class="font-headline-md text-deep-navy mb-4 font-bold">Improving</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: CON NGƯỜI COUPLE GROUP -->
+<section class="py-24 bg-white reveal-hidden">
+<div class="px-margin-desktop max-w-container-max mx-auto mb-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+<div class="space-y-6">
+<span class="text-dynamic-pink font-bold tracking-widest uppercase text-label-md">CON NGƯỜI</span>
+<h2 class="font-display-lg text-headline-lg text-primary uppercase font-bold">Con người Couple Group</h2>
+<p class="text-headline-md text-deep-navy/70 font-medium italic">Con người là giá trị bền vững nhất</p>
+</div>
+<div>
+<p class="text-slate-gray font-body-md leading-relaxed">
+                            Điều tạo nên Couple Group không chỉ là những sản phẩm hay những cột mốc phát triển, mà là những con người cùng học hỏi, cùng làm việc và cùng trưởng thành mỗi ngày. Chính những trải nghiệm được sẻ chia đã tạo nên một tập thể gắn kết, nơi mỗi cá nhân đều góp phần viết tiếp hành trình của Couple Group.
+                        </p>
+</div>
+</div>
+</div>
+<div class="relative px-margin-desktop max-w-container-max mx-auto group">
+<div class="carousel-viewport" id="carousel-viewport">
+<div class="carousel-track" id="carousel-track">
+<!-- Slide 1 -->
+<div class="carousel-slide">
+<img alt="Team collaboration" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/kickoff.webp"/>
+</div>
+<!-- Slide 2 -->
+<div class="carousel-slide">
+<img alt="Company trip" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_1.jpg"/>
+</div>
+<!-- Slide 3 -->
+<div class="carousel-slide">
+<img alt="Learning session" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_2.webp"/>
+</div>
+<!-- Slide 4 -->
+<div class="carousel-slide">
+<img alt="Excellence awards" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_3.jpg"/>
+</div>
+<div class="carousel-slide">
+<img alt="Learning session" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_5.webp"/>
+</div>
+<div class="carousel-slide">
+<img alt="Learning session" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_6.webp"/>
+</div>
+<div class="carousel-slide">
+<img alt="Learning session" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_7.webp"/>
+</div>
+<div class="carousel-slide">
+<img alt="Learning session" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_8.webp"/>
+</div>
+<div class="carousel-slide">
+<img alt="Learning session" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_9.webp"/>
+</div>
+<div class="carousel-slide">
+<img alt="Learning session" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_10.webp"/>
+</div>
+<div class="carousel-slide">
+<img alt="Learning session" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_11.webp"/>
+</div>
+<div class="carousel-slide">
+<img alt="Learning session" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_12.webp"/>
+</div>
+<div class="carousel-slide">
+<img alt="Learning session" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_13.webp"/>
+</div>
+<div class="carousel-slide">
+<img alt="Learning session" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_14.webp"/>
+</div>
+<div class="carousel-slide">
+<img alt="Learning session" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_15.webp"/>
+</div>
+<div class="carousel-slide">
+<img alt="Learning session" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_16.webp"/>
+</div>
+<div class="carousel-slide">
+<img alt="Learning session" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_17.webp"/>
+</div>
+<div class="carousel-slide">
+<img alt="Learning session" class="w-full aspect-video object-cover rounded-[32px] shadow-lg pointer-events-none" src="assets/page_vanhoa_18.webp"/>
+</div>
+</div>
+</div>
+<!-- Carousel Nav -->
+<button class="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-4 rounded-full shadow-lg backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity z-10" id="prevBtn">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-4 rounded-full shadow-lg backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity z-10" id="nextBtn">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- SECTION 4: REDESIGNED CLOSING -->
+<section class="bg-soft-white py-24 md:py-32">
+<!-- Part 1: Text Content -->
+<div class="px-margin-desktop max-w-container-max mx-auto text-center mb-16 md:mb-24 reveal-hidden">
+<div class="max-w-4xl mx-auto space-y-8">
+<h2 class="font-display-lg text-primary text-headline-lg md:text-display-sm leading-tight md:leading-snug italic font-medium">
+                        "Tinh thần Thiên Nga không chỉ được kể bằng lời, mà được viết nên bởi những con người Couple Group."
+                    </h2>
+<p class="font-body-lg text-slate-gray max-w-2xl mx-auto">
+                        Mỗi hành trình, mỗi trải nghiệm và mỗi con người đều góp phần tạo nên bản sắc của Couple Group hôm nay và trong tương lai.
+                    </p>
+<div class="pt-6">
+</div>
+</div>
+</div>
+<!-- Part 2: Cinematic Video -->
+<div class="px-margin-desktop max-w-container-max mx-auto reveal-hidden">
+<div class="w-full lg:w-[85%] lg:mx-auto relative group">
+    <div class="aspect-video lg:aspect-[21/9] w-full overflow-hidden rounded-[24px] lg:rounded-[32px] shadow-2xl bg-primary/10">
+        <video
+            class="w-full h-full object-cover"
+            autoplay
+            muted
+            loop
+            playsinline>
+            <source src="https://cdn.hstatic.net/files/1000341387/file/activities_end_dna.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+</div>
+</section>
+
+</main>
+<!-- Footer (Replaced with Footer from SCREEN_2) -->
+<div id="site-footer-mount"></div>
+<script src="assets/js/site-footer.js"></script>
+<script src="assets/js/mobile-menu.js"></script>
+<script>
+    // Micro-interactions and subtle scroll effects
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        // Select all sections to animate
+        const sections = document.querySelectorAll('section > div');
+        sections.forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+
+        // Simple scroll interaction for nav
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('header');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'shadow-md');
+            } else {
+                nav.classList.remove('py-2', 'shadow-md');
+            }
+        });
+    });
+/* Mobile menu logic: xem assets/js/mobile-menu.js */
+document.addEventListener('DOMContentLoaded', () => {
+            // Scroll animations
+            const observerOptions = { threshold: 0.15 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal-visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-hidden').forEach(el => observer.observe(el));
+
+            // =======================
+// Carousel (Foundation Style)
+// =======================
+
+const viewport = document.getElementById("carousel-viewport");
+const track = document.getElementById("carousel-track");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
+
+const slides = [...track.children];
+
+slides.forEach(slide => {
+    track.appendChild(slide.cloneNode(true));
+});
+
+let isDragging = false;
+let startX = 0;
+let startTranslate = 0;
+
+let currentTranslate = 0;
+
+let autoScroll = true;
+
+function getSlideWidth() {
+    return track.children[0].offsetWidth;
+}
+
+function getOriginalWidth() {
+    return getSlideWidth() * slides.length;
+}
+
+function render() {
+
+    if (autoScroll && !isDragging) {
+
+        currentTranslate -= 0.35;
+
+        if (Math.abs(currentTranslate) >= getOriginalWidth()) {
+            currentTranslate = 0;
+        }
+
+    }
+
+    track.style.transition = "none";
+    track.style.transform = `translateX(${currentTranslate}px)`;
+
+    requestAnimationFrame(render);
+}
+
+requestAnimationFrame(render);
+
+
+// =======================
+// Drag
+// =======================
+
+function dragStart(e){
+
+    isDragging = true;
+    autoScroll = false;
+
+    startX = e.type.includes("mouse")
+        ? e.pageX
+        : e.touches[0].pageX;
+
+    startTranslate = currentTranslate;
+
+}
+
+function dragMove(e){
+
+    if(!isDragging) return;
+
+    const x = e.type.includes("mouse")
+        ? e.pageX
+        : e.touches[0].pageX;
+
+    currentTranslate = startTranslate + (x-startX);
+
+}
+
+function dragEnd(){
+
+    if(!isDragging) return;
+
+    isDragging = false;
+    autoScroll = true;
+
+}
+
+viewport.addEventListener("mousedown",dragStart);
+window.addEventListener("mousemove",dragMove);
+window.addEventListener("mouseup",dragEnd);
+
+viewport.addEventListener("touchstart",dragStart,{passive:true});
+window.addEventListener("touchmove",dragMove,{passive:true});
+window.addEventListener("touchend",dragEnd);
+
+
+// =======================
+// Pause khi hover
+// =======================
+
+viewport.addEventListener("mouseenter",()=>autoScroll=false);
+
+viewport.addEventListener("mouseleave",()=>{
+
+    if(!isDragging){
+        autoScroll=true;
+    }
+
+});
+
+
+// =======================
+// Prev Next
+// =======================
+
+function move(direction){
+
+    autoScroll=false;
+
+    const width=getSlideWidth();
+
+    currentTranslate+=direction*width;
+
+    track.style.transition="transform .45s ease";
+    track.style.transform=`translateX(${currentTranslate}px)`;
+
+    setTimeout(()=>{
+
+        track.style.transition="none";
+
+        if(Math.abs(currentTranslate)>=getOriginalWidth()){
+            currentTranslate=0;
+        }
+
+        autoScroll=true;
+
+    },450);
+
+}
+
+nextBtn.onclick=()=>move(-1);
+
+prevBtn.onclick=()=>move(1);
+
+window.addEventListener("resize",()=>{
+
+    track.style.transition="none";
+
+});
+            // Header shrink effect
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('header');
+                if (window.scrollY > 20) {
+                    header.classList.add('py-2', 'shadow-lg');
+                } else {
+                    header.classList.remove('py-2', 'shadow-lg');
+                }
+            });
+        });
+</script>
+
+
+
+
+
+
+
+
+</body></html>

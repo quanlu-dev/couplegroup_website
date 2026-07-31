@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="vi" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Couple Group - Kiêu hãnh Vươn xa</title>
+<!-- BEGIN: Typography & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<!-- END: Typography & Icons -->
+<!-- BEGIN: Tailwind CSS & Config -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind-config.js"></script>
+<!-- END: Tailwind CSS & Config -->
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="animations">
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .shimmer-overlay {
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 100%);
+      background-size: 200% 100%;
+      animation: shimmer 3s infinite linear;
+    }
+    .hero-gradient{
+    background: linear-gradient(
+        135deg,
+        #002A58 0%,
+        #004080 50%,
+        #0B5CAD 100%
+    );
+}
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    .hero-title-entrance {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+  </style>
+<style data-purpose="typography-fine-tuning">
+    .editorial-text {
+      letter-spacing: -0.01em;
+    }
+    
+  </style>
+<!-- END: Custom Styles -->
+<link rel="stylesheet" href="assets/css/responsive-fixes.css">
+</head>
+
+<body class="bg-surface text-on-surface font-inter antialiased overflow-x-hidden">
+<!-- BEGIN: Navigation -->
+<div id="site-header-mount"></div>
+<script src="assets/js/site-header.js"></script>
+<!-- END: Navigation -->
+<!-- Hero/Title Section -->
+<header class="pt-20">
+    <div class="hero-gradient h-[60vh] w-full flex items-end relative overflow-hidden">
+
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0"
+                style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size:40px 40px;">
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 w-full px-margin-desktop pb-16 max-w-container-max mx-auto">
+
+            <div class="flex flex-col gap-4">
+
+                <div class="flex items-center gap-2 text-soft-white/80 font-label-md uppercase tracking-widest">
+                    <span>Trang chủ</span>
+                    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+                    <span>Blog - Tin tức</span>
+                </div>
+
+                <h1 class="font-headline-lg text-soft-white max-w-4xl text-[36px] md:text-[48px] leading-tight">
+                    Kick off GOING GREEN – TIẾP LỬA SÁNG TẠO 2023
+                </h1>
+
+                <div class="flex items-center gap-6 mt-4 text-soft-white/90 font-label-md">
+
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[20px]">person</span>
+                        <span>Tran Thi Thu</span>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[20px]">calendar_today</span>
+                        <span>20/07/2023</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</header>
+<!-- Main Content -->
+<main class="max-w-4xl mx-auto px-4 py-16">
+<article class="relative bg-soft-white py-20 px-margin-desktop">
+<div class="max-w-[900px] mx-auto">
+<div class="prose prose-lg max-w-none"><h2 class="font-headline-md text-deep-navy mb-8">Kick Off GOING GREEN – TIẾP LỬA SÁNG TẠO 2023</h2><p class="font-body-md text-slate-gray leading-relaxed mb-8">GOING GREEN - NỖ LỰC XANH HÓA là xu hướng và trách nhiệm mà Couple Group lựa chọn để đồng hành cùng môi trường.</p><div class="my-12"><div class="rounded-2xl overflow-hidden content-shadow"><img alt="CEO Trần Quang Trường Thanh" class="w-full h-auto" src="assets/tintuc_ceo.webp"/></div></div><p class="font-body-md text-slate-gray leading-relaxed mb-8">Ngày 4/3/2023, Couple Group đã phối hợp với khoa Kỹ Thuật Dệt May - ĐH Quốc Gia Bách Khoa tổ chức chương trình “Tiếp lửa sáng tạo” với mong muốn tìm kiếm &amp; đồng hành cùng những chuyên gia đầu ngành về chất liệu, công nghệ nhằm tìm kiếm những giải pháp thân thiện cho môi trường trong lĩnh vực thời trang.</p><div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-12"><figure class="group"><div class="overflow-hidden rounded-xl content-shadow"><img alt="Workshop Going Green" class="w-full h-auto transform transition-transform duration-500 group-hover:scale-105" src="assets/tintuc_toancanhbk.webp"/></div><figcaption class="mt-3 text-center text-slate-gray italic font-label-sm">Toàn cảnh buổi workshop tại ĐH Bách Khoa</figcaption></figure><figure class="group"><div class="overflow-hidden rounded-xl content-shadow"><img alt="Đội ngũ Couple Group" class="w-full h-auto transform transition-transform duration-500 group-hover:scale-105" src="assets/tintuc_chuyengia.webp"/></div><figcaption class="mt-3 text-center text-slate-gray italic font-label-sm">Đội ngũ Couple Group và các chuyên gia</figcaption></figure></div><p class="font-body-md text-slate-gray leading-relaxed mb-8">Tin chắc sân chơi “GOING GREEN – TIẾP LỬA SÁNG TẠO 2023” sẽ là nguồn cảm hứng mang về nhiều ý tưởng xanh góp phần xây dựng sự phát triển bền vững cho môi trường. Cùng chờ xem ai sẽ là nhân vật đặc biệt nhận được phần thưởng giá trị từ Couple Group nhé.</p><div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-12"><img alt="Banner chương trình" class="rounded-xl content-shadow w-full h-[300px] object-cover" src="assets/tintuc_hoatdongsv2.webp"/><img alt="Hoạt động sinh viên" class="rounded-xl content-shadow w-full h-[300px] object-cover" src="assets/tintuc_hoatdongsv.webp"/></div></div>
+</div>
+</article>
+<!-- Social Share & Tags -->
+<!-- Footer of Article -->
+<div class="mt-20 pt-10 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-4">
+<span class="font-label-md text-deep-navy">CHIA SẺ:</span>
+<div class="flex gap-2">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-soft-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-[#1877F2] hover:text-soft-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">qr_code_2</span>
+</a>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-1 bg-surface rounded-full text-label-sm text-slate-gray">#CoupleGroup</span>
+<span class="px-4 py-1 bg-surface rounded-full text-label-sm text-slate-gray">#NewOffice</span>
+<span class="px-4 py-1 bg-surface rounded-full text-label-sm text-slate-gray">#Pasteur</span>
+<span class="px-4 py-1 bg-surface rounded-full text-label-sm text-slate-gray">#Growth</span>
+</div>
+</div>
+</main>
+<!-- Related Articles -->
+<section class="bg-surface py-20 px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="flex items-center justify-between mb-12">
+<h2 class="font-headline-md text-deep-navy">Bài viết khác</h2>
+<a class="text-dynamic-pink font-label-md flex items-center gap-2 group" href="tintuc.html">
+                        Xem tất cả
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Related Item 1 -->
+<a class="group" href="news1.html">
+<article class="bg-soft-white rounded-xl overflow-hidden content-shadow h-full flex flex-col transition-transform duration-300 hover:-translate-y-2">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-all duration-500 group-hover:scale-105" style="background-image: url('assets/khaitruong.webp')"></div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-dynamic-pink font-label-sm mb-2 uppercase tracking-wide">Phát triển kinh doanh</span>
+<h3 class="font-headline-md text-[18px] text-deep-navy line-clamp-2 leading-tight group-hover:text-dynamic-pink transition-colors">COUPLE GROUP CHÍNH THỨC KHAI TRƯƠNG VĂN PHÒNG MỚI</h3>
+<p class="mt-4 text-slate-gray font-label-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                                    20/05/2024
+                                </p>
+</div>
+</article>
+</a>
+<!-- Related Item 2 -->
+<a class="group" href="news2.html">
+<article class="bg-soft-white rounded-xl overflow-hidden content-shadow h-full flex flex-col transition-transform duration-300 hover:-translate-y-2">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-all duration-500 group-hover:scale-105" style="background-image: url('assets/khokhan.jpg')"></div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-dynamic-pink font-label-sm mb-2 uppercase tracking-wide">Sáng tạo</span>
+<h3 class="font-headline-md text-[18px] text-deep-navy line-clamp-2 leading-tight group-hover:text-dynamic-pink transition-colors">Điều gì giúp Couple TX mở cùng lúc 8 cửa hàng dù thị trường khó khăn?</h3>
+<p class="mt-4 text-slate-gray font-label-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                                    20/07/2023
+                                </p>
+</div>
+</article>
+</a>
+<!-- Related Item 3 -->
+<a class="group" href="news4.html">
+<article class="bg-soft-white rounded-xl overflow-hidden content-shadow h-full flex flex-col transition-transform duration-300 hover:-translate-y-2">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-all duration-500" style="background-image: url('assets/tronghieu1.jpg')"></div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-dynamic-pink font-label-sm mb-2 uppercase tracking-wide">Sự kiện</span>
+<h3 class="font-headline-md text-[18px] text-deep-navy line-clamp-2 leading-tight group-hover:text-dynamic-pink transition-colors">COUPLE TX KẾT HỢP CÙNG TRỌNG HIẾU LAN TỎA THÔNG ĐIỆP SỐNG XANH</h3>
+<p class="mt-4 text-slate-gray font-label-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                                    10/06/2023
+                                </p>
+</div>
+</article>
+</a>
+<!-- Related Item 4 -->
+<a class="group" href="/blogs/news-2/1-bai-viet-mau">
+<article class="bg-soft-white rounded-xl overflow-hidden content-shadow h-full flex flex-col transition-transform duration-300 hover:-translate-y-2">
+<div class="relative aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-all duration-500" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLvl3IbkD0pe3QWLuly1K9z9o_ASsfHgICPho5j_US9JFJA97SH5ssO5VBF5ArJIFRVLlAOWlICSvHt6eTTbyH8qlzBJViZ3b2mzQIOKmTjalT7URqtFrW97rDVSp6LeN590UydLfYzb96xBE77Ub0DThcbPMvaO8ckHADQ7Y6MlbL0cd_DnVis-54bJP5uM5_GteaZOr_WICg0QpZw1KJFDAO6GKUHb94S9sLDH1oZmY1WctwKsdm4K-js')"></div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<span class="text-dynamic-pink font-label-sm mb-2 uppercase tracking-wide">Tin tức</span>
+<h3 class="font-headline-md text-[18px] text-deep-navy line-clamp-2 leading-tight group-hover:text-dynamic-pink transition-colors">Bài viết mẫu tiêu chuẩn dành cho Couple Group News</h3>
+<p class="mt-4 text-slate-gray font-label-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                                    01/01/2023
+                                </p>
+</div>
+</article>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- BEGIN: Footer -->
+<div id="site-footer-mount"></div>
+<script src="assets/js/site-footer.js"></script>
+<script src="assets/js/mobile-menu.js"></script>
+<!-- END: Footer -->
+<!-- BEGIN: Interactive Scripts -->
+<script data-purpose="scroll-animations">
+    // Intersection Observer for scroll reveal animations
+    const observerOptions = {
+      threshold: 0.15,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // Scroll interaction for navbar
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 100) {
+        header.classList.add('py-2', 'shadow-2xl', 'bg-white/95');
+        header.classList.remove('py-4', 'bg-white/80');
+      } else {
+        header.classList.add('py-4', 'bg-white/80');
+        header.classList.remove('py-2', 'shadow-2xl', 'bg-white/95');
+      }
+    });
+    /* Mobile menu logic: xem assets/js/mobile-menu.js */
+  </script>
+  
+<!-- END: Interactive Scripts -->
+</body></html>

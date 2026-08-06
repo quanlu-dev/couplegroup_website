@@ -5,7 +5,7 @@
    ============================================================ */
 (function () {
   var html =
-    '<footer class="w-full bg-primary text-soft-white pt-32 pb-0 border-t border-white/5 relative overflow-hidden">' +
+    '<footer class="w-full bg-primary text-soft-white pt-16 pb-0 border-t border-white/5 relative overflow-hidden">' +
     '<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-12 relative z-10 pb-12 px-margin-desktop">' +
     '<div class="max-w-md space-y-6">' +
     '<span class="font-montserrat text-[24px] font-extrabold block tracking-tight">Couple Group</span>' +

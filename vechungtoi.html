@@ -64,13 +64,13 @@
 <!-- END: Navigation -->
 <main>
 <!-- BEGIN: Hero Section -->
-<section class="relative flex flex-col lg:flex-row items-center justify-start overflow-hidden bg-white pt-32 pb-8 lg:py-44 h-auto lg:h-[700px]">
-<div class="relative lg:absolute lg:top-[110px] lg:-right-0 w-full lg:w-[65%] h-auto lg:h-[calc(100%-110px)] z-0 lg:rounded-[40px] overflow-hidden order-2 lg:order-none mt-12 lg:mt-0">
+<section class="relative flex flex-col lg:flex-row items-center justify-start overflow-hidden bg-white pt-20 pb-2 lg:py-44 h-auto lg:h-[700px]">
+<div class="relative lg:absolute lg:top-[110px] lg:-right-0 w-full lg:w-[65%] h-auto lg:h-[calc(100%-110px)] z-0 lg:rounded-[40px] overflow-hidden order-2 lg:order-none mt-0 lg:mt-0">
 <video autoplay="" class="w-full h-full object-cover" loop="" muted="" playsinline="">
 <source src="https://cdn.hstatic.net/files/1000341387/file/videotrangchu.mp4" type="video/mp4"/>
 </video>
 </div>
-<div class="container mx-auto px-margin-desktop relative z-10 order-1 lg:order-none">
+<div class="hidden lg:block container mx-auto px-margin-desktop relative z-10 order-1 lg:order-none">
     <div class="max-w-2xl hero-title-entrance text-left ml-0">
 
         <span
@@ -115,9 +115,9 @@
 <!-- END: Hero Section -->
 
 <!-- BEGIN: About Us -->
-<section id="about" class="py-8 lg:py-12 bg-surface-bright reveal active">
+<section id="about" class="py-2 lg:py-12 bg-surface-bright reveal active">
 <div class="max-w-container-max mx-auto px-margin-desktop">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center mb-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-20 items-center mb-12">
 <div class="space-y-6 md:space-y-8">
 
     <span
@@ -160,25 +160,27 @@
 </div>
 </div>
 <!-- Timeline -->
-<div id="hanhtrinh" class="text-center mb-12">
-<h2 class="font-montserrat font-bold text-ink-black mb-2 text-[24px] sm:text-[28px] lg:text-[32px] leading-tight">
+<div id="hanhtrinh" class="text-center mb-4">
+<h2 class="font-montserrat font-bold text-ink-black mb-2 text-[20px] sm:text-[26px] lg:text-[32px] leading-tight">
     Hành trình phát triển
 </h2>
 <div class="w-24 h-1.5 bg-gradient-to-r from-dynamic-pink to-secondary-container mx-auto rounded-full"></div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-8">
+<div class="flex flex-col md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-8
+            bg-white md:bg-transparent rounded-2xl md:rounded-none
+            border border-outline-variant/20 md:border-none
+            divide-y divide-outline-variant/20 md:divide-y-0
+            overflow-hidden md:overflow-visible">
 
     <!-- 2009 -->
-    <div class="md:col-span-2 p-6 md:p-10 bg-white rounded-2xl border border-outline-variant/20 flex flex-col justify-between hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group">
+    <div class="md:col-span-2 p-6 md:p-10 bg-white rounded-none md:rounded-2xl border-0 md:border md:border-outline-variant/20 flex flex-col justify-between md:hover:shadow-2xl md:hover:-translate-y-2 transition-all duration-500 group">
         <div>
-            <span class="text-5xl md:text-6xl font-bold text-slate-gray/50 mb-4 md:mb-6 block group-hover:text-dynamic-pink/20 transition-colors">
+            <span class="text-3xl md:text-4xl font-bold text-slate-gray/50 mb-4 md:mb-6 block group-hover:text-dynamic-pink/20 transition-colors">
                 2009
             </span>
-
             <h3 class="font-montserrat font-bold text-[20px] md:text-[24px] mb-3 md:mb-4 text-ink-black">
                 Khởi nghiệp
             </h3>
-
             <p class="text-[14px] md:text-base text-on-surface-variant editorial-text text-justify">
                 Mở cửa hàng đầu tiên – khởi động chiến lược bán lẻ thời trang dành cho giới trẻ.
             </p>
@@ -186,34 +188,31 @@
     </div>
 
     <!-- 2013 -->
-    <div class="p-6 md:p-10 bg-deep-navy text-soft-white rounded-2xl flex flex-col justify-between hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
-        <span class="text-[20px] md:text-[24px] font-bold mb-4 md:mb-6 block border-b border-white/20 pb-3 md:pb-4">
+    <div class="p-6 md:p-10 bg-white md:bg-deep-navy text-ink-black md:text-soft-white rounded-none md:rounded-2xl border-0 md:border-none flex flex-col justify-between md:hover:shadow-2xl md:hover:-translate-y-2 transition-all duration-500">
+        <span class="text-[20px] md:text-[24px] font-bold mb-4 md:mb-6 block md:border-b md:border-white/20 pb-3 md:pb-4">
             2013
         </span>
-
         <p class="text-[14px] opacity-90 leading-relaxed text-justify">
             Thành lập nhà máy sản xuất riêng, làm chủ chuỗi cung ứng từ thiết kế đến chất lượng đầu ra.
         </p>
     </div>
 
     <!-- 2019 -->
-    <div class="p-6 md:p-10 bg-dynamic-pink text-soft-white rounded-2xl flex flex-col justify-between hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
-        <span class="text-[20px] md:text-[24px] font-bold mb-4 md:mb-6 block border-b border-white/20 pb-3 md:pb-4">
+    <div class="p-6 md:p-10 bg-white md:bg-dynamic-pink text-ink-black md:text-soft-white rounded-none md:rounded-2xl border-0 md:border-none flex flex-col justify-between md:hover:shadow-2xl md:hover:-translate-y-2 transition-all duration-500">
+        <span class="text-[20px] md:text-[24px] font-bold mb-4 md:mb-6 block md:border-b md:border-white/20 pb-3 md:pb-4">
             2019
         </span>
-
         <p class="text-[14px] opacity-90 leading-relaxed text-justify">
-            Tái định vị thương hiệu: từ “cặp đôi hồn nhiên” đến hình ảnh bản lĩnh, trưởng thành.
+            Tái định vị thương hiệu: từ "cặp đôi hồn nhiên" đến hình ảnh bản lĩnh, trưởng thành.
         </p>
     </div>
 
     <!-- 2024 -->
-    <div class="md:col-span-2 lg:col-span-1 p-6 md:p-10 bg-white rounded-2xl border border-outline-variant/20 flex flex-col justify-between hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+    <div class="md:col-span-2 lg:col-span-1 p-6 md:p-10 bg-white rounded-none md:rounded-2xl border-0 md:border md:border-outline-variant/20 flex flex-col justify-between md:hover:shadow-2xl md:hover:-translate-y-2 transition-all duration-500">
         <div>
-            <span class="text-[20px] md:text-[24px] font-montserrat font-bold text-deep-navy mb-4 md:mb-6 block border-b border-outline-variant/10 pb-3 md:pb-4">
+            <span class="text-[20px] md:text-[24px] font-montserrat font-bold text-deep-navy mb-4 md:mb-6 block md:border-b md:border-outline-variant/10 pb-3 md:pb-4">
                 2024
             </span>
-
             <p class="text-[14px] md:text-base text-on-surface-variant editorial-text text-justify">
                 Chính thức vận hành mô hình OMO (Online Merge Offline) – cá nhân hóa trải nghiệm khách hàng từ online đến offline.
             </p>
@@ -221,31 +220,24 @@
     </div>
 
     <!-- 2024 - Nay -->
-    <div class="md:col-span-3 p-6 md:p-10 bg-surface-container-highest/50 rounded-2xl border border-outline-variant/20 flex flex-col md:flex-row items-center gap-6 md:gap-10 hover:shadow-2xl transition-all duration-500">
-
+    <div class="md:col-span-3 p-6 md:p-10 bg-white md:bg-surface-container-highest/50 rounded-none md:rounded-2xl border-0 md:border md:border-outline-variant/20 flex flex-col md:flex-row items-center gap-6 md:gap-10 md:hover:shadow-2xl transition-all duration-500">
         <div class="hidden sm:block flex-shrink-0">
             <img
                 src="assets/hanhtrinh.jpg"
                 alt="Modern Office Lifestyle"
                 class="w-40 md:w-56 h-auto rounded-xl object-contain shadow-lg">
         </div>
-
         <div class="space-y-3 md:space-y-4">
-
             <span class="text-[20px] md:text-[24px] font-bold text-deep-navy block">
                 2024 - Nay
             </span>
-
             <h4 class="font-bold font-montserrat text-[18px] md:text-[24px] text-ink-black">
                 Chuyển đổi số &amp; Bền vững
             </h4>
-
             <p class="text-[14px] md:text-base text-on-surface-variant editorial-text leading-relaxed text-justify">
                 Tập trung vào ứng dụng công nghệ 4.0 và quy trình sản xuất thân thiện với môi trường để kiến tạo giá trị dài hạn.
             </p>
-
         </div>
-
     </div>
 
 </div>

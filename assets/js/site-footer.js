@@ -5,9 +5,9 @@
    ============================================================ */
 (function () {
   var html =
-    '<footer class="w-full bg-primary text-soft-white pt-16 pb-0 border-t border-white/5 relative overflow-hidden">' +
-    '<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-12 relative z-10 pb-12 px-margin-desktop">' +
-    '<div class="max-w-md space-y-6">' +
+    '<footer class="w-full bg-primary text-soft-white pt-8 pb-0 border-t border-white/5 relative overflow-hidden">' +
+    '<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-12 relative z-10 pb-8 px-margin-desktop">' +
+    '<div class="hidden lg:block max-w-md space-y-6">' +
     '<span class="font-montserrat text-[24px] font-extrabold block tracking-tight">Couple Group</span>' +
     '<p class="text-soft-white/60 editorial-text leading-relaxed text-[14px] sm:text-[16px]">Hệ sinh thái truyền cảm hứng cho thế hệ mới</p>' +
     '<div class="flex gap-5">' +
@@ -32,7 +32,7 @@
     "</div>" +
     "</div>" +
     '<div class="w-full py-4 px-margin-desktop bg-ink-black text-soft-white/50 text-[12px] flex flex-col md:flex-row justify-between items-center border-t border-white/5">' +
-    '<p class="text-[11px] sm:text-[12px]">© 2024 Couple Group. Tất cả các quyền được bảo lưu.</p>' +
+    '<p class="text-[11px] sm:text-[12px]">© 2026 Couple Group. Tất cả các quyền được bảo lưu.</p>' +
     '<p class="text-[11px] sm:text-[12px]">Được xây dựng cho tương lai của phong cách sống.</p>' +
     "</div>" +
     "</footer>";
